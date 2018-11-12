@@ -1,0 +1,12 @@
+.tag-list .tags {
+    float: right;
+}
+
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+.carousel-inner .carousel-caption ul {
+    color: #FFFFFF;
+}

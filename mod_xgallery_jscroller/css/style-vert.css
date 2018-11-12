@@ -1,0 +1,44 @@
+/* root element for scrollable */
+.xgallery-jscroller-vert {
+	width:175px;
+	margin:0 auto 5px;
+} 
+
+.xgallery-jscroller-vert div.scrollable-vert { 
+ 
+    /* required settings */ 
+    position:relative; 
+    overflow:hidden; 
+ 
+    /* vertical scrollers have typically larger height than width */ 
+    height: 405px;
+	width:175px;
+} 
+ 
+/* root element for scrollable items */ 
+.xgallery-jscroller-vert div.scrollable-vert div.items { 
+    position:absolute; 
+ 
+    /* this time we have very large space for the height */ 
+    height:20000em; 
+}
+
+.xgallery-jscroller-vert .prev.browse {
+	background:transparent url(../images/arrow-up.png) no-repeat scroll 0 0 !important;
+	cursor:pointer;
+	display:block;
+	font-size:1px;
+	height:32px;
+	margin:5px auto;
+	width:32px;
+}
+
+.xgallery-jscroller-vert .next.browse {
+	background:transparent url(../images/arrow-down.png) no-repeat scroll right 0 !important;
+	cursor:pointer;
+	display:block;
+	font-size:1px;
+	height:32px;
+	margin:5px auto;
+	width:32px;
+}

@@ -1,0 +1,74 @@
+/* 
+    root element for the scrollable. 
+    when scrolling occurs this element stays still. 
+*/ 
+.xgallery-scr-horz div.scrollable {  
+    /* required settings */ 
+    position:relative; 
+    overflow:hidden; 
+	width: 512px; 
+    height:150px;
+	float:left;
+} 
+ 
+/* 
+    root element for scrollable items. Must be absolutely positioned 
+    and it should have a extremely large width to accomodate scrollable items. 
+    it's enough that you set width and height for the root element and 
+    not for this element. 
+*/ 
+.xgallery-scr-horz div.scrollable div.items { 
+    /* this cannot be too large */ 
+    width:20000em; 
+    position:absolute; 
+} 
+ 
+/* 
+    a single item. must be floated in horizontal scrolling. 
+    typically, this element is the one that *you* will style 
+    the most. 
+*/ 
+.xgallery-scr-horz div.scrollable div.items div { 
+} 
+ 
+/* you may want to setup some decorations to active the item */ 
+.xgallery-scr-horz div.items div.active { 
+    border:1px inset #ccc; 
+    background-color:#fff; 
+}
+
+.xgallery-scr-horz .scr-horiz-container {
+	width:128px;
+	padding-top:10px;
+	float:left;
+}
+
+.scr-horiz-container {
+	
+}
+
+.xgallery-scr-horz .prev.browse {
+	background:transparent url(../images/arrow-left.png) no-repeat scroll 0 0 !important;
+	cursor:pointer;
+	display:block;
+	float:left;
+	font-size:1px;
+	height:69px;
+	margin:15px 5px;
+	width:32px;
+}
+
+.xgallery-scr-horz .next.browse {
+	background:transparent url(../images/arrow-right.png) no-repeat scroll right 0 !important;
+	cursor:pointer;
+	display:block;
+	float:left;
+	font-size:1px;
+	height:69px;
+	margin:15px 5px;
+	width:32px;
+}
+
+.xgallery-scr-horz .items div.image-group {
+	float:left;
+}
